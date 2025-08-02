@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>📝 My Todo List</h1>
+        <p>Stay organized and get things done!</p>
+    </header>
+    
+    <main class="container">
+        <div class="input-section">
+            <input type="text" id="todo-input" placeholder="What needs to be done?" class="todo-input">
+            <button id="add-todo" class="add-btn">+ Add Task</button>
+        </div>
+        
+        <div class="todo-section">
+            <h2>Tasks</h2>
+            <ul id="todo-list" class="todo-list"></ul>
+            <div class="empty-state" id="empty-state">
+                <p>🎉 No tasks yet! Add one above to get started.</p>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
