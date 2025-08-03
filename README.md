@@ -34,6 +34,15 @@ This free course is designed to take you from a complete beginner to an advanced
 - 🎨 Creating responsive and modern UI with CSS
 - 📝 Hands-on assignment for practice and skill reinforcement
 
+### 3. [Inline Chat & Smart Code Suggestions](https://www.youtube.com/watch?v=X8U3YSECR1Q&list=PLaFzfwmPR7_KDsxXQgrme0YFvJa7Fb38x&index=3&ab_channel=WebGentle)
+
+**What you'll learn:**
+- 🚀 How to use GitHub Copilot Inline Chat for real-time coding assistance
+- 🤖 Leveraging AI-powered code suggestions and completions
+- 📝 Implementing functions and logic using natural language comments
+- 💡 Tips and tricks to maximize productivity with Copilot Inline Chat
+- And more!
+
 
 ## 🏁 Getting Started
 

@@ -28,12 +28,11 @@ class Program
                     break;
                 case "3":
                     // TODO: Calculate triangle area
-                    CalculateTriangleArea();
+                    //CalculateTriangleArea();
                     break;
                 case "4":
                     // TODO: Calculate square area
-                    CalculateSquareArea();
-                    break;
+                    //CalculateSquareArea();
                     break;
                 default:
                     Console.WriteLine("Invalid choice. Please select 1-4.");
