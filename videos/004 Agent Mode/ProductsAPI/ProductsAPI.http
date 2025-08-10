@@ -1,0 +1,101 @@
+@ProductsAPI_HostAddress = http://localhost:5166
+
+### Get All Products
+GET {{ProductsAPI_HostAddress}}/api/products
+Accept: application/json
+
+###
+
+### Get Product by ID
+GET {{ProductsAPI_HostAddress}}/api/products/1
+Accept: application/json
+
+###
+
+### Get Products by Category
+GET {{ProductsAPI_HostAddress}}/api/products/category/Electronics
+Accept: application/json
+
+###
+
+### Create New Product
+POST {{ProductsAPI_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Wireless Headphones",
+  "description": "High-quality noise-cancelling wireless headphones",
+  "price": 199.99,
+  "stockQuantity": 25,
+  "category": "Electronics"
+}
+
+###
+
+### Create Another Product (Kitchen Category)
+POST {{ProductsAPI_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Stainless Steel Water Bottle",
+  "description": "Insulated water bottle that keeps drinks cold for 24 hours",
+  "price": 29.99,
+  "stockQuantity": 100,
+  "category": "Kitchen"
+}
+
+###
+
+### Update Product
+PUT {{ProductsAPI_HostAddress}}/api/products/1
+Content-Type: application/json
+
+{
+  "name": "Gaming Laptop Pro",
+  "description": "High-performance gaming laptop with RTX 4080 graphics and 32GB RAM",
+  "price": 1599.99,
+  "stockQuantity": 15,
+  "category": "Electronics"
+}
+
+###
+
+### Delete Product
+DELETE {{ProductsAPI_HostAddress}}/api/products/3
+Accept: application/json
+
+###
+
+### Test Error Handling - Get Non-existent Product
+GET {{ProductsAPI_HostAddress}}/api/products/999
+Accept: application/json
+
+###
+
+### Test Validation - Create Product with Invalid Data
+POST {{ProductsAPI_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "name": "",
+  "description": "This product has invalid data",
+  "price": -10.50,
+  "stockQuantity": -5,
+  "category": "Test"
+}
+
+###
+
+### Test Validation - Update with Invalid Data
+PUT {{ProductsAPI_HostAddress}}/api/products/1
+Content-Type: application/json
+
+{
+  "name": "",
+  "description": "This update has invalid data",
+  "price": 0,
+  "stockQuantity": -1,
+  "category": ""
+}
+
+###
